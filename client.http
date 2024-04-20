@@ -1,0 +1,25 @@
+@baseUrl = http://localhost:3000
+
+# @name create_account
+POST http://{{baseUrl}}/accounts
+Content-Type: application/json
+
+{
+    "name": "Danilo",
+    "email": "testel.com",
+    "password": "123456"
+}
+
+
+###
+
+# @name get_accounts
+GET http://{{baseUrl}}/accounts
+Content-Type: application/json
+
+
+###
+
+# @name get_sessions
+GET http://{{baseUrl}}/sessions
+Content-Type: application/json
